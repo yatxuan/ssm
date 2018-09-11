@@ -16,4 +16,8 @@
         <package name="com.xuan.person.pojo"/>
     </typeAliases>
 
+    <mappers>
+        <mapper resource="mapping/PersonMapper.xml"/>
+    </mappers>
+
 </configuration>

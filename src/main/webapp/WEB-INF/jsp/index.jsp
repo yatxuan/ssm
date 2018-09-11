@@ -53,5 +53,9 @@
             $(".tableA").html(html);
         })
     }
+
+    $(function () {
+        sel();
+    })
 </script>
 </html>

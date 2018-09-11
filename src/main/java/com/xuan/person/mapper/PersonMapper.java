@@ -1,6 +1,7 @@
 package com.xuan.person.mapper;
 
 import com.xuan.person.pojo.Person;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -17,5 +18,6 @@ public interface PersonMapper {
 
     int updateByPrimaryKey(Person record);
 
+//    @Select(" select * from person")
     List<Person> getPersonList();
 }

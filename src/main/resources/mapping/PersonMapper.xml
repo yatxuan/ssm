@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xuan.person.mapper.PersonMapper">
+
     <resultMap id="BaseResultMap" type="com.xuan.person.pojo.Person">
         <id column="id" property="id" jdbcType="INTEGER"/>
         <result column="name" property="name" jdbcType="VARCHAR"/>
@@ -17,10 +19,10 @@
         from person
         where id = #{id,jdbcType=INTEGER}
     </select>
-
-    <select id="getPersonList" resultType="person">
-        select * from person
+    <select id="getPersonList" resultType="com.xuan.person.pojo.Person">
+        select * from  person
     </select>
+
 
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from person

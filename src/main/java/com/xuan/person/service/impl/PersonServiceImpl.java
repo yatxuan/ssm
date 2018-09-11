@@ -19,7 +19,7 @@ public class PersonServiceImpl implements PersonService {
     @Override
     public JsonResult getPersonList() {
 
-        JsonResult jsonResult = null;
+        JsonResult jsonResult;
         List<Person> list = personMapper.getPersonList();
 
         if (list.size()>0)
