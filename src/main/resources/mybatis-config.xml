@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 配置mybatis的log实现为LOG4J -->
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+        <setting name="autoMappingBehavior" value="FULL"/>
+    </settings>
+
+    <!-- 给类型起一个 别名 -->
+    <typeAliases>
+        <!-- 通过导入包名的方式 自动生成别名  [生成的别名就是类名(不区分大小写)] -->
+        <package name="com.xuan.person.pojo"/>
+    </typeAliases>
+
+</configuration>
