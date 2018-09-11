@@ -2,6 +2,8 @@ package com.xuan.person.mapper;
 
 import com.xuan.person.pojo.Person;
 
+import java.util.List;
+
 public interface PersonMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,6 @@ public interface PersonMapper {
     int updateByPrimaryKeySelective(Person record);
 
     int updateByPrimaryKey(Person record);
+
+    List<Person> getPersonList();
 }
